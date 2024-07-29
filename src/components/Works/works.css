@@ -1,0 +1,42 @@
+.works {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.625rem;
+  padding: 0.625rem;
+  margin-top: -1.25rem;
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 48rem) {
+  .works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.work {
+  background-color: #fff;
+  padding: 0.625rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work:hover {
+  transform: scale(1.02);
+}
+
+.work img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.work h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.work p {
+  font-size: 1rem;
+  color: #666;
+}

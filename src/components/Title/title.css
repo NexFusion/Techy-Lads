@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+  color: #212ea0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 4.375rem 0 1.875rem;
+}
+
+.title h2 {
+  font-size: 1.5rem;
+  color: #000f38;
+  margin-top: 0.3125rem;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    margin: 6.25rem 0 3.125rem;
+  }
+
+  .title h2 {
+    font-size: 1.75rem;
+    margin-top: 0.625rem;
+  }
+}

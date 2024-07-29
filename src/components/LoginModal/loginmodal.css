@@ -1,0 +1,204 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  font-family: "Playwrite DK Loopet", sans-serif;
+  box-sizing: border-box;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.welcome-message {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4f7cac;
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 2.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4f7cac;
+  font-size: 1.25rem;
+}
+
+.btn {
+  background-color: #4f7cac;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background-color: #3e6281;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  color: #4f7cac;
+  transition: color 0.3s ease;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.toggle-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid #4f7cac;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-container p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.welcome-container .btn {
+  background-color: #241d4a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.welcome-container .btn:hover {
+  background-color: #1e163a;
+  transform: scale(1.05);
+  color: white;
+}
+
+.welcome-container .btn:active {
+  background-color: #1a0f2a;
+  transform: scale(0.95);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .welcome-message {
+    font-size: 1.25rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .password-toggle {
+    font-size: 1rem;
+    right: 0.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .toggle-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .welcome-container p {
+    font-size: 0.9rem;
+  }
+
+  .welcome-container .btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
